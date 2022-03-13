@@ -1,0 +1,12 @@
+<div class="food-types">
+  <ul>
+    <li
+      *ngFor="let foodType of foodTypes"
+      class="selected"
+      [ngClass]="{ selected: foodType === selectedFoodType }"
+      (click)="selectedFoodType = foodType"
+    >
+      <span class="pl-5">{{foodType}}</span>
+    </li>
+  </ul>
+</div>

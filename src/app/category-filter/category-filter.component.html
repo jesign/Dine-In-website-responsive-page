@@ -1,0 +1,12 @@
+<div class="categories">
+  <ul>
+    <li
+      *ngFor="let category of categories"
+      class="selected"
+      [ngClass]="{ selected: category === selectedCategory }"
+      (click)="selectedCategory = category"
+    >
+      <span class="pl-5">{{category}}</span>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,18 @@
+.basket-button {
+  height: 38px;
+  background-color: white;
+  padding: 0 20px;
+  border-radius: 50px;
+  width: 82px;
+  margin-right: 18px;
+
+  svg {
+    margin: auto;
+  }
+
+  @media (max-width: 640px) {
+    display: none;
+  }
+}
+
+
